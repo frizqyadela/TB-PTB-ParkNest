@@ -29,6 +29,11 @@ import com.example.parknest.ui.theme.ProfileScreen
 import com.example.parknest.ui.theme.AccountSettingsScreen
 import com.example.parknest.ui.theme.ChangePasswordScreen
 import com.example.parknest.ui.theme.CurrentLocationScreen
+import com.example.parknest.ui.theme.ParkingDetailScreen
+import com.example.parknest.ui.theme.ParkingBookingScreen
+import com.example.parknest.ui.theme.PaymentMethodScreen
+import com.example.parknest.ui.theme.ParkingDetailPaymentScreen
+import com.example.parknest.ui.theme.BookingDetailsScreen
 
 
 class MainActivity : ComponentActivity() {
@@ -70,9 +75,6 @@ class MainActivity : ComponentActivity() {
                                 DashboardScreen(navController = navController)
                             }
                             composable("cari_screen") {
-                                DashboardScreen(navController = navController)
-                            }
-                            composable("cari_screen") {
                                 CariScreen(navController = navController)
                             }
                             composable("notifikasi_screen") {
@@ -95,6 +97,21 @@ class MainActivity : ComponentActivity() {
                             }
                             composable("lokasisekarang_screen") {
                                 CurrentLocationScreen(navController = navController)
+                            }
+                            composable("detailparkir_screen") {
+                                ParkingDetailScreen(navController = navController)
+                            }
+                            composable("booking_screen") {
+                                ParkingBookingScreen(navController = navController)
+                            }
+                            composable("metode_screen") {
+                                PaymentMethodScreen(navController = navController)
+                            }
+                            composable("konfirmasi_screen") {
+                                ParkingDetailPaymentScreen(navController = navController)
+                            }
+                            composable("detail_screen") {
+                                BookingDetailsScreen(navController = navController)
                             }
                         }
                     }
