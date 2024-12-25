@@ -21,6 +21,8 @@ import com.example.parknest.ui.theme.LoginScreen
 import com.example.parknest.ui.theme.RegisterScreen
 import com.example.parknest.ui.theme.SplashScreen
 import com.example.parknest.ui.theme.DashboardScreen
+import com.example.parknest.ui.theme.CariScreen
+import com.example.parknest.ui.theme.NotifikasiScreen
 
 
 class MainActivity : ComponentActivity() {
@@ -63,6 +65,12 @@ class MainActivity : ComponentActivity() {
                             }
                             composable("cari_screen") {
                                 DashboardScreen(navController = navController)
+                            }
+                            composable("cari_screen") {
+                                CariScreen(navController = navController)
+                            }
+                            composable("notifikasi_screen") {
+                                NotifikasiScreen(navController = navController)
                             }
                         }
                     }
