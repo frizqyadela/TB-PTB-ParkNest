@@ -23,6 +23,7 @@ import com.example.parknest.ui.theme.SplashScreen
 import com.example.parknest.ui.theme.DashboardScreen
 import com.example.parknest.ui.theme.CariScreen
 import com.example.parknest.ui.theme.NotifikasiScreen
+import com.example.parknest.ui.theme.RiwayatScreen
 
 
 class MainActivity : ComponentActivity() {
@@ -71,6 +72,9 @@ class MainActivity : ComponentActivity() {
                             }
                             composable("notifikasi_screen") {
                                 NotifikasiScreen(navController = navController)
+                            }
+                            composable("riwayat_screen") {
+                                RiwayatScreen(navController = navController)
                             }
                         }
                     }

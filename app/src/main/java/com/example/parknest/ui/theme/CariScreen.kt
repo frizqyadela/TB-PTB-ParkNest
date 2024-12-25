@@ -62,7 +62,7 @@ fun CariScreen(navController: NavController) {
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .background(Color(0xFF211C6A))
+                    .background(Color(0xFFFFFFFF))
                     .padding(16.dp)
             ) {
                 BasicTextField(
@@ -103,7 +103,7 @@ fun CariScreen(navController: NavController) {
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(200.dp)
-                    .background(Color(0xFFB0C4DE))
+                    .background(Color(0xFF211C6A))
                     .padding(16.dp),
                 contentAlignment = Alignment.Center
             ) {
