@@ -246,7 +246,7 @@ fun BottomNavigationBar(navController: NavController) {
             icon = { Icon(Icons.Filled.History, contentDescription = "Riwayat") },
             label = { Text("Riwayat") },
             selected = false,
-            onClick = { /* Handle navigation */ }
+            onClick = { navController.navigate("riwayat_screen") }
         )
         NavigationBarItem(
             icon = { Icon(Icons.Filled.Person, contentDescription = "Profil") },
