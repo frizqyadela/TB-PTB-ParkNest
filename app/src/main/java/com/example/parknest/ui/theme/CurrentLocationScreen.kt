@@ -107,7 +107,7 @@ fun CurrentLocationScreen(navController: NavController) {
             }
 
             Button(
-                onClick = { navController.navigate("next_screen") },
+                onClick = { navController.navigate("detailparkir_screen") },
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(top = 24.dp)
