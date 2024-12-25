@@ -30,7 +30,7 @@ fun EditProfileScreen(navController: NavController) {
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { },
+                title = {Text("Edit Profil", color = Color(0xFFEFF396)) },
                 navigationIcon = {
                     IconButton(onClick = { navController.navigateUp() }) {
                         Icon(

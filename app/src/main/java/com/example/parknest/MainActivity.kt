@@ -28,6 +28,7 @@ import com.example.parknest.ui.theme.RiwayatScreen
 import com.example.parknest.ui.theme.ProfileScreen
 import com.example.parknest.ui.theme.AccountSettingsScreen
 import com.example.parknest.ui.theme.ChangePasswordScreen
+import com.example.parknest.ui.theme.CurrentLocationScreen
 
 
 class MainActivity : ComponentActivity() {
@@ -91,6 +92,9 @@ class MainActivity : ComponentActivity() {
                             }
                             composable("ubahpassword_screen") {
                                 ChangePasswordScreen(navController = navController)
+                            }
+                            composable("lokasisekarang_screen") {
+                                CurrentLocationScreen(navController = navController)
                             }
                         }
                     }
