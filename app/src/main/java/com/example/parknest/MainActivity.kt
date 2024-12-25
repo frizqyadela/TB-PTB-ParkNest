@@ -22,8 +22,10 @@ import com.example.parknest.ui.theme.RegisterScreen
 import com.example.parknest.ui.theme.SplashScreen
 import com.example.parknest.ui.theme.DashboardScreen
 import com.example.parknest.ui.theme.CariScreen
+import com.example.parknest.ui.theme.EditProfileScreen
 import com.example.parknest.ui.theme.NotifikasiScreen
 import com.example.parknest.ui.theme.RiwayatScreen
+import com.example.parknest.ui.theme.ProfileScreen
 
 
 class MainActivity : ComponentActivity() {
@@ -75,6 +77,12 @@ class MainActivity : ComponentActivity() {
                             }
                             composable("riwayat_screen") {
                                 RiwayatScreen(navController = navController)
+                            }
+                            composable("profil_screen") {
+                                ProfileScreen (navController = navController)
+                            }
+                            composable("editprofil_screen") {
+                                EditProfileScreen(navController = navController)
                             }
                         }
                     }

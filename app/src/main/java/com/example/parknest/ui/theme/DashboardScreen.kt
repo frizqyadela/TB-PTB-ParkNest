@@ -47,7 +47,10 @@ fun ParkingSlotItem(title: String, status: String, distance: String, actionText:
 @Composable
 fun DashboardScreen(navController: NavController) {
     Scaffold(
-        bottomBar = { BottomNavigationBar(navController = navController) },
+        bottomBar = { BottomNavigationBar(
+            navController = navController,
+            currentRoute = "profile_screen"
+        ) },
         content = { innerPadding ->
             // Membuat konten dapat discroll
             Column(
@@ -91,7 +94,7 @@ fun DashboardScreen(navController: NavController) {
                             IconButton(onClick = {navController.navigate("notifikasi_screen") }) {
                                 Icon(Icons.Filled.Notifications, contentDescription = "Notifications", tint = Color.Gray)
                             }
-                            IconButton(onClick = { /* Handle profile */ }) {
+                            IconButton(onClick = { navController.navigate("profil_screen")}) {
                                 Icon(Icons.Filled.AccountCircle, contentDescription = "Profile", tint = Color.Gray)
                             }
                         }
@@ -220,7 +223,7 @@ fun QuickActionItem(text: String, onClick: () -> Unit) {
 }
 
 @Composable
-fun BottomNavigationBar(navController: NavController) {
+fun BottomNavigationBar(navController: NavController, currentRoute: String) {
     NavigationBar(
         containerColor = Color.White
     ) {
@@ -252,7 +255,7 @@ fun BottomNavigationBar(navController: NavController) {
             icon = { Icon(Icons.Filled.Person, contentDescription = "Profil") },
             label = { Text("Profil") },
             selected = false,
-            onClick = { /* Handle navigation */ }
+            onClick = { navController.navigate("profil_screen") }
         )
     }
 }
