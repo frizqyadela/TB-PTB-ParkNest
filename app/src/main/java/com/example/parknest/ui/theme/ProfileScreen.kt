@@ -123,7 +123,7 @@ fun ProfileScreen(navController: NavController) {
                     ProfileMenuItem(
                         icon = Icons.Default.Settings,
                         title = "Pengaturan Akun",
-                        onClick = { navController.navigate("account_settings_screen") }
+                        onClick = { navController.navigate("setting_screen") }
                     )
                     ProfileMenuItem(
                         icon = Icons.Default.History,

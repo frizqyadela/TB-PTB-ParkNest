@@ -26,6 +26,8 @@ import com.example.parknest.ui.theme.EditProfileScreen
 import com.example.parknest.ui.theme.NotifikasiScreen
 import com.example.parknest.ui.theme.RiwayatScreen
 import com.example.parknest.ui.theme.ProfileScreen
+import com.example.parknest.ui.theme.AccountSettingsScreen
+import com.example.parknest.ui.theme.ChangePasswordScreen
 
 
 class MainActivity : ComponentActivity() {
@@ -83,6 +85,12 @@ class MainActivity : ComponentActivity() {
                             }
                             composable("editprofil_screen") {
                                 EditProfileScreen(navController = navController)
+                            }
+                            composable("setting_screen") {
+                                AccountSettingsScreen(navController = navController)
+                            }
+                            composable("ubahpassword_screen") {
+                                ChangePasswordScreen(navController = navController)
                             }
                         }
                     }
