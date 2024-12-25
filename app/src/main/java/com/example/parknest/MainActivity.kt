@@ -20,6 +20,7 @@ import com.example.parknest.ui.theme.ParkNestTheme
 import com.example.parknest.ui.theme.LoginScreen
 import com.example.parknest.ui.theme.RegisterScreen
 import com.example.parknest.ui.theme.SplashScreen
+import com.example.parknest.ui.theme.DashboardScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,6 +56,9 @@ class MainActivity : ComponentActivity() {
                             }
                             composable("register_screen") {
                                 RegisterScreen(navController = navController)
+                            }
+                            composable("dashboard_screen") {
+                                DashboardScreen(navController = navController)
                             }
                         }
                     }
