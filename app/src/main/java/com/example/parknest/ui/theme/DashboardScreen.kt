@@ -88,7 +88,7 @@ fun DashboardScreen(navController: NavController) {
                             )
                         }
                         Row {
-                            IconButton(onClick = { /* Handle notification */ }) {
+                            IconButton(onClick = {navController.navigate("notifikasi_screen") }) {
                                 Icon(Icons.Filled.Notifications, contentDescription = "Notifications", tint = Color.Gray)
                             }
                             IconButton(onClick = { /* Handle profile */ }) {
@@ -234,7 +234,7 @@ fun BottomNavigationBar(navController: NavController) {
             icon = { Icon(Icons.Filled.Search, contentDescription = "Cari Parkir") },
             label = { Text("Cari Parkir") },
             selected = false,
-            onClick = { /* Handle navigation */ }
+            onClick = { navController.navigate("cari_screen") }
         )
         NavigationBarItem(
             icon = { Icon(Icons.Filled.AddCircle, contentDescription = "Pesan Slot", tint = Color(0xFFFFD700)) },
